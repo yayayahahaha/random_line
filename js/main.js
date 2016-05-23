@@ -46,12 +46,12 @@ window.onload = function() {
 				if (this.lx < 0 || this.lx > w) {
 					this.vector_lx = -this.vector_lx;
 				}
-/*				if (this.y < 0 || this.y > h) {
+				if (this.y < 0 || this.y > h) {
 					this.vector_y = -this.vector_y;
 				}
 				if (this.ly < 0 || this.ly > h) {
 					this.vector_ly = -this.vector_ly;
-				}*/
+				}
 
 				this.x += this.vector_x * this.ori_speed;
 				this.y += this.vector_y * this.ori_speed;
