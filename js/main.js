@@ -8,10 +8,10 @@ window.onload = function() {
 			w = canvas.width,
 			h = canvas.height;
 
-		line_number = 1000;
+		line_number = 10;
 		line_array = [];
 		c.strokeStyle = 'white';
-		c.lineWidth = 1;
+		c.lineWidth = 10;
 
 		Line = function() {
 			this.x = Math.random() * w;
@@ -29,12 +29,16 @@ window.onload = function() {
 
 			this.ori_speed = Math.random() * 200;
 			this.line_speed = Math.random() * 200;
+
+			this.curve_point_x = Math.random() * w;
+			this.curve_point_y = Math.random() * h;
 		}
 
 		Line.prototype = {
 			draw_line: function() {
 				c.beginPath();
 				c.moveTo(this.x, this.y);
+				c.quadraticCurveTo(this.curve_point_x, this.curve_point_y, this.lx, this.ly);
 				c.lineTo(this.lx, this.ly);
 				c.stroke();
 			},
