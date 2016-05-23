@@ -8,3 +8,8 @@
 body {
   overflow: hidden;
 }
+/* line 13, ../sass/style.scss */
+body canvas {
+  background-image: url(../R.jpg);
+  background-size: 100% auto;
+}

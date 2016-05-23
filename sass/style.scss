@@ -9,4 +9,9 @@ $h: 100vh;
 
 body{
 	overflow: hidden;
+
+	canvas{
+		background-image: url(../R.jpg);
+		background-size: 100% auto;
+	}
 }
